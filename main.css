@@ -44,27 +44,38 @@ target-name:new;
 target-new:tab;
 }
 
-footer ul li
+footer li
 {
     display: inline-block;
     color: black;
     list-style: none;
-
+    text-decoration: none;
 }
 
-footer ul:visited
+
+
+
+footer li :visited
 {
     color: green;
 }
-
-footer ul:hover
+footer li :hover
 {
     color: red;
 }
-
 
 .box-model p, .box-model img
 {
     padding: 5px;
     margin: 10%;
+}
+
+.box-model img
+{
+    width: 10%;
+}
+
+.images a img
+{
+    border-radius: 10%;
 }
