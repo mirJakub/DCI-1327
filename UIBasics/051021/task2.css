@@ -1,0 +1,49 @@
+body
+{
+    margin: 2px;
+    text-align: center;
+}
+
+.wrapper
+{
+    width: 99vw;
+    height: 98.7vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px magenta solid;
+    box-sizing: border-box;
+}
+
+div
+{
+    border: 1px blue solid;
+
+}
+
+.cell2
+{
+    grid-column: 2 / 4;
+    background-color: blue;
+
+}
+.cell6
+{
+    grid-column: 3 / 5;
+    background-color: green;
+}
+
+.cell9
+{
+    grid-row: 3 / 5;
+    grid-column-start:2;
+    background-color: sandybrown;
+
+}
+
+.cell10
+{
+    grid-row: 3 / 5;
+    grid-column-start: 4;
+    background-color: violet;
+}

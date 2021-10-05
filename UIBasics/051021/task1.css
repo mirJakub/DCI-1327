@@ -1,0 +1,22 @@
+body
+{
+    margin: 2px;
+    text-align: center;
+}
+
+.wrapper
+{
+    width: 99vw;
+    height: 98.7vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px magenta solid;
+    box-sizing: border-box;
+}
+
+div
+{
+    border: 1px blue solid;
+
+}
