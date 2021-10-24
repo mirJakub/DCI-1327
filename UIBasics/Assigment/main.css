@@ -178,6 +178,7 @@ header {
 }
 
 .wrapper-columns {
+  overflow-y: scroll;
   font-family: "Klarheit";
   color: blue;
   top: 16vh;
@@ -196,7 +197,8 @@ header {
 .wrapper-columns .column1,
 .wrapper-columns .column2,
 .wrapper-columns .column3,
-.wrapper-columns .column4 {
+.wrapper-columns .column4,
+.wrapper-columns footer {
   border-right: solid blue 1px;
   font-family: "Klarheit";
   overflow-y: scroll;
@@ -207,7 +209,8 @@ header {
 .wrapper-columns .column1 img,
 .wrapper-columns .column2 img,
 .wrapper-columns .column3 img,
-.wrapper-columns .column4 img {
+.wrapper-columns .column4 img,
+.wrapper-columns footer img {
   -webkit-box-shadow: 2px 2px 7px blue;
           box-shadow: 2px 2px 7px blue;
 }
@@ -278,6 +281,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 0px;
 }
 
 ul {
@@ -348,13 +352,13 @@ footer {
   height: 100px;
   width: 100%;
   background-color: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100%;
-  left: 0px;
+  position: static;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 15;
+  grid-column: 1/16;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -368,6 +372,7 @@ footer {
   border: blue 1px solid;
   -webkit-box-shadow: 2px -2px 7px blue;
           box-shadow: 2px -2px 7px blue;
+  margin-bottom: 20px;
 }
 
 footer form {

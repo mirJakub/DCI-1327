@@ -106,6 +106,8 @@ header {
 }
 
 .wrapper-columns {
+        overflow-y: scroll;
+
   @include Default-Font();
   top: 16vh;
   position: fixed;
@@ -119,7 +121,9 @@ header {
   .column1,
   .column2,
   .column3,
-  .column4 {
+  .column4,
+  footer 
+  {
     @include BorderRight();
     font-family: $defaultFont;
     overflow-y: scroll;
@@ -201,6 +205,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 0px;
 
 }
 
@@ -274,14 +279,17 @@ footer {
   height: 100px;
   width: 100%;
   background-color: white;
-  position: sticky;
-  top: 100%;
-  left: 0px;
+  position: static;
+      // overflow-y: scroll;
+// bottom: 0px;
+  // left: 0px;
   display: inline-flex;
+  grid-column: 1/16;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 @include Border-Top();
+margin-bottom: 20px;
   form {
     height: 34px;
   }
